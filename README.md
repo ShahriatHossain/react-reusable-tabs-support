@@ -1,5 +1,8 @@
 A reusable responsive react.js tab component with dynamic contents.
 
+## NPM Package
+https://www.npmjs.com/package/react-reusable-tabs
+
 ## Demo
 https://reusable-table-component.firebaseapp.com/machines/59d9f4b4-018f-43d8-92d0-c51de7d987e5#/
 
