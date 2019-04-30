@@ -5,8 +5,11 @@ https://reusable-table-component.firebaseapp.com/machines/59d9f4b4-018f-43d8-92d
 
 ## Usage
 Use react-reusable-tabs as below.
+
 import React from 'react'
+
 import { Tab } from 'react-reusable-tabs'
+
 
 const App = () => (
     <div className="App">
@@ -21,10 +24,12 @@ const App = () => (
   	liveEvents={this.getLiveEvents}
 	/>
 );
+	
 // initiate default tab
 state = {
   selectedTab: 'details'
 }
+
 // handle selected tab
 clickTabHandler = (tabName) => {
 	this.setState({
@@ -32,6 +37,7 @@ clickTabHandler = (tabName) => {
       selectedTab: tabName
    });
 }
+
 // initiate tabs
 export const getMachineTabs = () => {
     return [
@@ -40,6 +46,7 @@ export const getMachineTabs = () => {
         { label: 'Live Events', name: 'liveEvents' }
     ]
 }
+
 // prepare machine details
     getDetail = () => {
         if (!this.props.machine) return 'No record found.';
@@ -55,6 +62,7 @@ export const getMachineTabs = () => {
 
         return details.length > 0 ? details : 'No record found.';
     }
+    
 
     // prepare events for machine
     getEvents = () => {
@@ -70,6 +78,7 @@ export const getMachineTabs = () => {
 
         return details.length > 0 ? details : 'No record found.';
     }
+    
 
     // prepare live events for machine
     getLiveEvents = () => {
@@ -85,6 +94,7 @@ export const getMachineTabs = () => {
 
         return details.length > 0 ? details : 'No record found.';
     }
+    
 // sample records
 {
 	
@@ -100,12 +110,18 @@ export const getMachineTabs = () => {
 		}
 }
 
+
 ## Notes
+
 ‘name’ property of method getMachineTabs should match the the props name of Tab component. In the example above of this method there are several values for name property like 'details' 'events' 'liveEvents'. So these same named values also defined as props of Tabs which works as reference functions to return content for each tab content. Please check above examples to understand better.
+
 ## Installation
 ## npm
+
 npm i react-reusable-tabs --save
+
 ## yarn
+
 yarn add react-reusable-tabs 
  
  
